@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pemsa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Iuran Sampah"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PEMSA">
+        <activity android:name=".StartedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DetailHistoryPaymentActivity" />
+        <activity android:name=".HistoryPaymentListActivity" />
+        <activity android:name=".ApprovementPaymentActivity" />
+        <activity android:name=".PendingPaymentListActivity" />
+        <activity android:name=".PaymentBillActivity" />
+        <activity android:name=".ChooseCitizen" />
+        <activity android:name=".SendBillActivity" />
+        <activity android:name=".DataUserActivity" />
+        <activity android:name=".ChangePasswordUserActivity" />
+        <activity android:name=".ProfilRtActivity" />
+        <activity android:name=".EditProfileCitizenActivity" />
+        <activity android:name=".DashboardRtActivity" />
+        <activity android:name=".SingUpActivity" />
+        <activity android:name=".SingInActivity"/>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SingUpActivity">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Daftar"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner">>
+
+        <EditText
+            android:id="@+id/emailSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_edit_text_baby_blue"
+            android:hint="Alamat Email"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/fullNameSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:autofillHints="Full Name"
+            android:background="@drawable/bg_edit_text_baby_blue"
+            android:hint="Nama Lengkap"
+            android:inputType="text"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/passwordSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:autofillHints="Password"
+            android:background="@drawable/bg_edit_text_baby_blue"
+            android:hint="Kata Sandi"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/addressSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:autofillHints="Alamat"
+            android:background="@drawable/bg_edit_text_baby_blue"
+            android:hint="Alamat"
+            android:inputType="text"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/phoneSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:autofillHints="Phone Number"
+            android:background="@drawable/bg_edit_text_baby_blue"
+            android:hint="Nomor Telepon"
+            android:inputType="text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegisterCiiyzens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/baby_blue_bg"
+        android:text="Daftar"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        android:id="@+id/txtViewLoginPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="Sudah Punya Akun? Silahkan Masuk"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegisterCiiyzens" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRegister"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="57dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginRight="204dp"
+        android:layout_marginBottom="200dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
